@@ -1,0 +1,20 @@
+{
+  "name": "Sunrise Realty Exec",
+  "short_name": "SR Exec",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192/f59e0b/ffffff?text=SR",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512/f59e0b/ffffff?text=SR",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
