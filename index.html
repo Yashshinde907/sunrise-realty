@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SUNRISE REALTY | PRO DASHBOARD</title>
+    <link rel="manifest" href="manifest.json">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -267,5 +268,15 @@
         async function logout() { localStorage.clear(); location.reload(); }
         window.onload = () => { if (localStorage.getItem('sr_auth') === 'true') showDashboard(); lucide.createIcons(); };
     </script>
+    <script>
+    // Register the Service Worker (sw.js)
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('Service Worker Registered!', reg))
+          .catch(err => console.log('Service Worker failed:', err));
+      });
+    }
+  </script>
 </body>
 </html>
